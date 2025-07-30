@@ -8,12 +8,21 @@ environment:
 
 dependencies:
   bloc: ^9.0.0
+  bloc_concurrency: ^0.3.0
+  equatable: ^2.0.7
   flutter:
     sdk: flutter
   flutter_bloc: ^9.1.1
+  flutter_dotenv: ^5.2.1
   flutter_localizations:
     sdk: flutter
+  get_it: ^8.0.3
+  go_router: ^16.0.0
   intl: ^0.20.2
+  meta: ^1.16.0
+  repository:
+    path: packages/repository
+  rxdart: ^0.28.0
 
 dev_dependencies:
   bloc_test: ^10.0.0
@@ -25,3 +34,9 @@ dev_dependencies:
 flutter:
   generate: true
   uses-material-design: true
+
+  assets:
+    # - assets/icons/
+    - .env.dev
+    - .env.prod
+    - .env.stage

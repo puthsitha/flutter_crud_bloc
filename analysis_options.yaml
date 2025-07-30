@@ -2,6 +2,15 @@ include: package:very_good_analysis/analysis_options.yaml
 analyzer:
   exclude:
     - lib/l10n/gen/*
+  errors:
+    lines_longer_than_80_chars: ignore
+
 linter:
   rules:
     public_member_api_docs: false
+bloc:
+  rules:
+    - avoid_flutter_imports
+    - avoid_public_bloc_methods
+    - avoid_public_fields
+    - prefer_bloc
